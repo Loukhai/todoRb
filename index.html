@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rb TODO</title>
+    <script>
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty("--vh", `${vh}px`);
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-database.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="bg"></div>
+    <div class="global-container">
+      <div class="header">
+        <div class="header-c">
+          <div class="name">ToDo</div>
+          <div class="logo"></div>
+          <div>Rb@Dev</div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="main-c">
+          <div class="taskes" id="taskes">
+            <div class="taskes-c" id="taskes-c">
+              <!-- the new task! -->
+
+              <div class="task-c">
+                <div class="left-side">
+                  <div class="task">Dowloading Tasks...</div>
+                  <div class="timing">
+                    <i class="far fa-clock"></i>
+                    time...
+                  </div>
+                </div>
+                <div class="right-side">
+                  <div>
+                    <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                  </div>
+                  <div><i class="fas fa-edit"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer" id="footer">
+            <div class="footer-c">
+              <div class="up-c">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="153.105"
+                  height="70"
+                  viewBox="0 0 153.105 70"
+                  class="menu-bg"
+                >
+                  <path
+                    id="Path"
+                    d="M.033,28C32.93,28,45.8,13.547,54.121,8.065S70.066,0,76.59,0s15.9,3.174,22.548,8.065S119.846,28,153.033,28c.162,13.909,0,82,0,82H0S.033,40.5.033,28Z"
+                  ></path>
+                </svg>
+                <div class="btn-up" id="btn-up">
+                  <i class="fas fa-angle-double-up"></i>
+                </div>
+              </div>
+              <div class="inp" id="container-inp">
+                <div class="clr">
+                  <form id="form">
+                    <label class="custom-radio" style="background-color: #fff">
+                      <input type="radio" name="clr" value="#fff" checked />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label
+                      class="custom-radio"
+                      style="background-color: #fbe114"
+                    >
+                      <input type="radio" name="clr" value="#fbe114" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label
+                      class="custom-radio"
+                      style="background-color: #4beed1"
+                    >
+                      <input type="radio" name="clr" value="#4BEED1" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label
+                      class="custom-radio"
+                      style="background-color: #13d3fb"
+                    >
+                      <input type="radio" name="clr" value="#13D3FB" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label
+                      class="custom-radio"
+                      style="background-color: #b6adff"
+                    >
+                      <input type="radio" name="clr" value="#B6ADFF" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label
+                      class="custom-radio"
+                      style="background-color: #fb1467"
+                    >
+                      <input type="radio" name="clr" value="#FB1467" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label
+                      class="custom-radio"
+                      style="background-color: #f5815c"
+                    >
+                      <input type="radio" name="clr" value="#F5815C" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label
+                      class="custom-radio"
+                      style="background-color: #148cfb"
+                    >
+                      <input type="radio" name="clr" value="#148CFB" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </form>
+                </div>
+                <div class="inp-c">
+                  <div class="p-right">
+                    <div class="v-border"></div>
+                    <input
+                      type="text"
+                      class="input"
+                      id="input"
+                      placeholder="Hey! ^-^ . . ."
+                    />
+                  </div>
+                  <div class="p-left">
+                    <div class="btn-add" id="btn_add">+</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/style.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
